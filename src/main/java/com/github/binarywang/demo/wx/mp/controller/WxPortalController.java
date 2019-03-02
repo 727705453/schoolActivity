@@ -72,6 +72,7 @@ public class WxPortalController {
             // 明文传输的消息
             WxMpXmlMessage inMessage = WxMpXmlMessage.fromXml(requestBody);
             WxMpXmlOutMessage outMessage = this.route(inMessage, appid);
+
             if (outMessage == null) {
                 return "";
             }
