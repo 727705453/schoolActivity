@@ -1,15 +1,21 @@
 logging:
-  level:
-    org.springframework.web: INFO
-    com.github.binarywang.demo.wx.mp: DEBUG
-    me.chanjar.weixin: DEBUG
+    level:
+        org.springframework.web: INFO
+        com.github.binarywang.demo.wx.mp: DEBUG
+        me.chanjar.weixin: DEBUG
 wx:
-  mp:
-    configs:
-      - appId: wx7cd973fb8bb6e2df
-        secret: 71cd00d6c64a7d2967ec0fe8798f6236
-        token: 71cd00d6c64a7d2967ec0fe8798f6236
-        aesKey: 111 （接口配置里的EncodingAESKey值）
-
+    mp:
+        configs:
+        - appId: wx6f5f40b08e983502
+          secret: 51392662722c53a8c56c359086a91cbe
+          token: 51392662722c53a8c56c359086a91cbe
+          aesKey: 1111
+spring:
+    thymeleaf:
+        cache: false # 开发时关闭缓存,不然没法看到实时页面
+        mode: LEGACYHTML5 # 用非严格的 HTML
+        encoding: UTF-8
+        servlet:
+            content-type: text/html
 server:
     port: 8080
