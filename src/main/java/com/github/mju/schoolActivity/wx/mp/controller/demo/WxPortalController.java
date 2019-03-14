@@ -1,4 +1,4 @@
-package com.github.mju.schoolActivity.wx.mp.controller;
+package com.github.mju.schoolActivity.wx.mp.controller.demo;
 
 import com.github.mju.schoolActivity.wx.mp.config.WxMpConfiguration;
 import org.apache.commons.lang3.StringUtils;
