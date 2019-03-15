@@ -11,13 +11,29 @@ wx:
           token: 51392662722c53a8c56c359086a91cbe
           aesKey: 1111
 spring:
+    profiles:
+        active: dev
     thymeleaf:
         cache: false # 开发时关闭缓存,不然没法看到实时页面
         mode: LEGACYHTML5 # 用非严格的 HTML
         encoding: UTF-8
-        prefix: classpath:/templates/
-        servlet:
-            content-type: text/html
-        suffix: .html
+    servlet:
+        content-type: text/html
+        multipart:
+            max-request-size: 100MB
+            max-file-size: 100MB
+        jackson:
+            time-zone: GMT+8
 server:
     port: 8080
+
+
+---
+spring:
+    profiles: dev
+    datasource:
+        url: jdbc:mysql://dtwjava.com:3306/wx_activity?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+        username: root
+        password: yuda100Jia
+        db-name: wx_activity #用来搜集数据库的所有表
+        filters: wall,mergeStat
