@@ -31,7 +31,7 @@ public class WxMpController {
         // 微信回调地址
         String url = "http://wx.zhaoxuebang.com/wx/mp/"+appid+"/userInfo";
         // 构造网页授权url
-        
+
         String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_USERINFO, null);
         log.info("【微信网页授权】获取授权地址，redirectUrl = {}", redirectUrl);
 
