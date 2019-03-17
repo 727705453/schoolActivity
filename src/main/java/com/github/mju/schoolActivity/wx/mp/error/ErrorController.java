@@ -23,7 +23,7 @@ public class ErrorController {
 
   @GetMapping(value = "/500")
   public String error500() {
-    return "error";
-  }
+        return "error";
+    }
 
 }
