@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.github.mju.schoolActivity.wx.mp.service.mapper.ActivitiesMapper">
+    <!-- Activities -->
+    <resultMap id="resultMap" type="Activities">
+        <id column="activityId" property="activityId"/>
+        <result column="activityType" property="activityType" />
+        <result column="activityDesc" property="activityDesc" />
+        <result column="participantsNum" property="participantsNum" />
+        <result column="status" property="status" />
+        <result column="starttime" property="starttime" />
+        <result column="endtime" property="endtime" />
+        <result column="limitNum" property="limitNum" />
+        <result column="initiatorId" property="initiatorId" />
+        <result column="place" property="place" />
+        <result column="startupNum" property="startupNum" />
+    </resultMap>
+
+
+</mapper>
