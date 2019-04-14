@@ -37,3 +37,8 @@ spring:
         password: yuda100Jia
         db-name: wx_activity #用来搜集数据库的所有表
         filters: wall,mergeStat
+
+#        mybatis相关配置
+mybatis:
+    config-location: classpath:mybatis/mybatis-config.xml
+    mapper-locations: classpath:mybatis/mapper/*Mapper.xml
