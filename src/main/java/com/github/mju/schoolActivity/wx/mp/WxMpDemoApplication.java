@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author Binary Wang(https://github.com/binarywang)
  */
-@MapperScan(value = "com.github.mju.schoolActivity.wx.mp.service.mapper")
+@MapperScan(value = "com.github.mju.schoolActivity.wx.mp.mapper")
 @SpringBootApplication
 public class WxMpDemoApplication {
 
